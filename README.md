@@ -1,5 +1,3 @@
-###Welcome to the Pindrop Challenge by Miles Dayoub
-
 In order to run this app run these commands in the /backend directory
 
 ### `npm install`
@@ -8,7 +6,7 @@ In order to run this app run these commands in the /backend directory
 
 go to
 http://localhost:5000/
-to play in the graphQL playground
+to play in the GraphQL playground
 
 then in a new terminal window (leave the backend server running)
 
@@ -30,12 +28,12 @@ Here are some queries and mutations for the graphql playground.
 
 Since we want to see clicks, copy this into the left side of the playground:
 query {
-getMovies {
-name
-id
-clicks
-movieDBID
-}
+  getMovies {
+    name
+    id
+    clicks
+    movieDBID
+  }
 }
 
 Then hit the play button to see all the clicks for each movie
@@ -43,26 +41,26 @@ Then hit the play button to see all the clicks for each movie
 Here are some others to play with
 
 mutation {
-createMovie(name: "The third movie" movieDBID: "5235421134") {
-name
-id
-clicks
-movieDBID
-}
+  createMovie(name: "The third movie" movieDBID: "5235421134") {
+    name
+    id
+    clicks
+    movieDBID
+  }
 }
 mutation {
-clickMovie(movieDBID: "5235435", name: "The second movie") {
-name
-id
-clicks
-movieDBID
-}
+  clickMovie(movieDBID: "5235435", name: "The second movie") {
+    name
+    id
+    clicks
+    movieDBID
+  }
 }
 
 query {
-getMovie(movieDBID: "475557") {
-name
-id
-clicks
-}
+  getMovie(movieDBID: "475557") {
+    name
+    id
+    clicks
+  }
 }
