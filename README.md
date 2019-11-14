@@ -35,7 +35,7 @@ query {
     movieDBID
   }
 }
-
+/n
 Then hit the play button to see all the clicks for each movie
 
 Here are some others to play with
@@ -48,6 +48,8 @@ mutation {
     movieDBID
   }
 }
+
+/n
 mutation {
   clickMovie(movieDBID: "5235435", name: "The second movie") {
     name
@@ -56,6 +58,7 @@ mutation {
     movieDBID
   }
 }
+/n
 
 query {
   getMovie(movieDBID: "475557") {
